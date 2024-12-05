@@ -11,7 +11,7 @@ public class HistorianHysteria {
         List<Integer> left = new ArrayList<Integer>();
         List<Integer> right = new ArrayList<Integer>();
         try{
-            File file = new File("day1puzzle1data.txt");
+            File file = new File("data/day1puzzle1data.txt");
             BufferedReader br = new BufferedReader(new FileReader(file));
             String line;
             while((line=br.readLine())!=null){

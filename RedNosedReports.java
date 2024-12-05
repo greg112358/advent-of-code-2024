@@ -11,7 +11,7 @@ public class RedNosedReports {
     public static void main(String[] args){
         List<List<Integer>> reports = new ArrayList<>();
         try{
-            File file = new File("day2.txt");
+            File file = new File("data/day2.txt");
             BufferedReader br = new BufferedReader(new FileReader(file));
             String line;
             
