@@ -37,6 +37,7 @@ public class GuardGallivant {
            }
            Direction direction = Direction.Up;
            int numOfMoves = 0;
+           maze.get(ii).set(jj,'X');
            while(true){
             if(direction.equals(Direction.Up)){
                 if(ii<=0){
@@ -79,7 +80,19 @@ public class GuardGallivant {
                     jj = jj -1;
                 }
             }
-            numOfMoves ++;
+            if(!maze.get(ii).get(jj).equals('X')){
+                maze.get(ii).set(jj, 'X');
+                //numOfMoves++;
+            }
+           }
+           for(int i = 0;i<maze.size();i++){
+            for(int j = 0;j<maze.get(i).size();j++){
+                //System.out.print(maze.get(i).get(j));
+                if(maze.get(i).get(j).equals('X')){
+                    numOfMoves++;
+                }
+            }
+            //System.out.print("\n");
            }
            System.out.println("Number of moves: "+numOfMoves);
        }catch(Exception e){
