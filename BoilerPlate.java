@@ -5,7 +5,7 @@ import java.io.FileReader;
 public class BoilerPlate {
        public static void main(String[] args) {
         try {
-            File file = new File("data/day7.txt");
+            File file = new File("data/day11.txt");
             // File file = new File("data/exampledata.txt");
             BufferedReader br = new BufferedReader(new FileReader(file));
             String line;
